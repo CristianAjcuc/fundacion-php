@@ -40,7 +40,7 @@
                <div class="logo-header" data-background-color="dark2">
                     
                     <a href="../administrador/escritorio.php" class="logo">
-                         <img src="../../backend/img/logo.svg" alt="navbar brand" class="navbar-brand">
+                         <img src="../../backend/img/icon.png" alt="navbar brand" style="width: 50px" class="navbar-brand"> FUNDACIÓN
                     </a>
                     <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon">
@@ -82,14 +82,14 @@
                               <li class="nav-item dropdown hidden-caret">
                                    <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
                                         <div class="avatar-sm">
-                                             <img src="../../backend/img/mujer.png" alt="..." class="avatar-img rounded-circle">
+                                             <img src="../../backend/img/avatar.png" alt="..." class="avatar-img rounded-circle">
                                         </div>
                                    </a>
                                    <ul class="dropdown-menu dropdown-user animated fadeIn">
                                         <div class="dropdown-user-scroll scrollbar-outer">
                                              <li>
                                                   <div class="user-box">
-                                                       <div class="avatar-lg"><img src="../../backend/img/mujer.png" alt="image profile" class="avatar-img rounded"></div>
+                                                       <div class="avatar-lg"><img src="../../backend/img/avatar.png" alt="image profile" class="avatar-img rounded"></div>
                                                        <div class="u-text">
                                                             <h4><?php echo ucfirst($_SESSION['nombre']); ?></h4>
                                                             <p class="text-muted"><?php echo ucfirst($_SESSION['email']); ?></p><a href="../profile/mostrar.php" class="btn btn-xs btn-secondary btn-sm">ver perfil</a>
@@ -118,7 +118,7 @@
                     <div class="sidebar-content">
                          <div class="user">
                               <div class="avatar-sm float-left mr-2">
-                                   <img src="../../backend/img/mujer.png" alt="..." class="avatar-img rounded-circle">
+                                   <img src="../../backend/img/avatar.png" alt="..." class="avatar-img rounded-circle">
                               </div>
                               <div class="info">
                                    <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
@@ -324,12 +324,12 @@ if($sentencia){
                   <div class="col-md-12 col-lg-12">
                      <div class="form-group">
 
-                    <label for="email2">DNI del médico</label> <button type="button" id="buscar" class="btn btn-icon btn-round btn-dark">
+                    <label for="email2">DPI del médico</label> <button type="button" id="buscar" class="btn btn-icon btn-round btn-dark">
                          <i class="fab fa-discourse"></i>
                          </button>
                     <input type="text" required maxlength="8"  onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" id="documento" class="form-control" name="dnidoct" value="<?php echo $d->dnidoc  ?>" placeholder="Enter Email">
                     <input type="hidden" name="doctid" value="<?php echo $d->coddoc  ?>">
-               <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>
+               <small id="emailHelp2" class="form-text text-muted">DPI del médico.</small>
                     </div>
 
                   </div>    
@@ -339,13 +339,13 @@ if($sentencia){
   <div class="col-md-6 col-lg-6">
      <label for="email2">Nombre del médico</label>
      <input type="text" required id="nombres" class="form-control" onkeypress="return soloLetras(event)" name="namedoc" value="<?php echo $d->nomdoc  ?>" placeholder="Enter paciente">
-     <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>   
+     <small id="emailHelp2" class="form-text text-muted">Nombre del médico.</small>   
   </div>  
 
   <div class="col-md-6 col-lg-6">
      <label for="email2">Apellido del médico</label>
      <input type="text" required id="apellidoPaterno" class="form-control" onkeypress="return soloLetras(event)" name="apdoc" value="<?php echo $d->apedoc  ?>" placeholder="Enter paciente">
-     <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>   
+     <small id="emailHelp2" class="form-text text-muted">Apellido del médico.</small>   
   </div>                    
 </div>
 
@@ -369,13 +369,13 @@ if($sentencia){
              }
                 ?>
             </select> 
-     <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small> 
+     <small id="emailHelp2" class="form-text text-muted">Especialidad del médico.</small> 
    </div>
 
    <div class="col-md-6 col-lg-6">
      <label for="email2">Teléfono del médico</label>
      <input type="text" required  class="form-control" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" maxlength="9" name="teldoc" value="<?php echo $d->telefo  ?>" placeholder="Enter paciente">
-     <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>   
+     <small id="emailHelp2" class="form-text text-muted">Teléfono del médico.</small>   
   </div>  
 </div>
 
@@ -388,13 +388,13 @@ if($sentencia){
            <option value="Masculino">Masculino</option>
            <option value="Femenino">Femenino</option>  
      </select>
-     <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>   
+     <small id="emailHelp2" class="form-text text-muted">Sexo del médico.</small>   
   </div> 
 
   <div class="col-md-6 col-lg-6">
     <label for="email2">Nacimiento del médico</label>
      <input type="date" required  class="form-control"  name="nacdoc" value="<?php echo $d->fechanaci  ?>" placeholder="Enter paciente">
-     <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small> 
+     <small id="emailHelp2" class="form-text text-muted">Fecha de nacimiento del médico.</small> 
   </div>   
 </div>
 
@@ -402,7 +402,7 @@ if($sentencia){
    <div class="col-md-6 col-lg-6">
     <label for="email2">Correo del médico</label>
      <input type="text" required  class="form-control"  name="coomed" value="<?php echo $d->correo  ?>" placeholder="Enter doctor">
-     <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small> 
+     <small id="emailHelp2" class="form-text text-muted">Correo electrónico del médico.</small> 
   </div>
 
    <div class="col-md-6 col-lg-6">
@@ -410,11 +410,11 @@ if($sentencia){
      <select class="form-control" name="nacionam" required>
           <option value="<?php echo $d->naciona  ?>"><?php echo $d->naciona  ?></option>
           <option>------------Seleccione-----------------</option>
-        <option value="Peruana(o)">Peruana(o)</option>
-        <option value="Venezolana(o)">Venezolana(o)</option>
+        <option value="Guatemalteco(a)">Guatemalteco(a)</option>
+        <!-- <option value="Venezolana(o)">Venezolana(o)</option>
         <option value="Argentina(o)">Argentina(o)</option>
         <option value="Ecuatoriana(o)">Ecuatoriana(o)</option>
-        <option value="Uruguaya(o)">Uruguaya(o)</option>
+        <option value="Uruguaya(o)">Uruguaya(o)</option> -->
 
     </select>
   </div>  
@@ -443,9 +443,8 @@ if($sentencia){
     </div>
                <footer class="footer">
                     <div class="container-fluid">
-                        
                          <div class="copyright ml-auto">
-                              2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.themekita.com">ThemeKita</a>
+                              2023, sistema donado por UMG.
                          </div>                   
                     </div>
                </footer>

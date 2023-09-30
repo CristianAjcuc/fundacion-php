@@ -6,7 +6,7 @@ $dni = $_REQUEST['dni'];
 // Iniciar llamada a API
 $curl = curl_init();
 
-// Buscar dni
+// Buscar dpi
 curl_setopt_array($curl, array(
   CURLOPT_URL => 'https://api.apis.net.pe/v1/dni?numero=' . $dni,
   CURLOPT_RETURNTRANSFER => true,

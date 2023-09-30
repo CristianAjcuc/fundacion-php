@@ -40,7 +40,7 @@
                <div class="logo-header" data-background-color="dark2">
                     
                     <a href="../administrador/escritorio.php" class="logo">
-                         <img src="../../backend/img/logo.svg" alt="navbar brand" class="navbar-brand">
+                         <img src="../../backend/img/icon.png" alt="navbar brand" style="width: 50px" class="navbar-brand"> FUNDACIÓN
                     </a>
                     <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon">
@@ -82,14 +82,14 @@
                               <li class="nav-item dropdown hidden-caret">
                                    <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
                                         <div class="avatar-sm">
-                                             <img src="../../backend/img/mujer.png" alt="..." class="avatar-img rounded-circle">
+                                             <img src="../../backend/img/avatar.png" alt="..." class="avatar-img rounded-circle">
                                         </div>
                                    </a>
                                    <ul class="dropdown-menu dropdown-user animated fadeIn">
                                         <div class="dropdown-user-scroll scrollbar-outer">
                                              <li>
                                                   <div class="user-box">
-                                                       <div class="avatar-lg"><img src="../../backend/img/mujer.png" alt="image profile" class="avatar-img rounded"></div>
+                                                       <div class="avatar-lg"><img src="../../backend/img/avatar.png" alt="image profile" class="avatar-img rounded"></div>
                                                        <div class="u-text">
                                                             <h4><?php echo ucfirst($_SESSION['nombre']); ?></h4>
                                                             <p class="text-muted"><?php echo ucfirst($_SESSION['email']); ?></p><a href="../profile/mostrar.php" class="btn btn-xs btn-secondary btn-sm">ver perfil</a>
@@ -118,7 +118,7 @@
                     <div class="sidebar-content">
                          <div class="user">
                               <div class="avatar-sm float-left mr-2">
-                                   <img src="../../backend/img/mujer.png" alt="..." class="avatar-img rounded-circle">
+                                   <img src="../../backend/img/avatar.png" alt="..." class="avatar-img rounded-circle">
                               </div>
                               <div class="info">
                                    <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
@@ -326,12 +326,13 @@ if($sentencia){
                   <div class="col-md-12 col-lg-12">
                      <div class="form-group">
 
-                    <label for="email2">DNI del paciente</label> <button type="button" id="buscar" class="btn btn-icon btn-round btn-dark">
-                                            <i class="fab fa-discourse"></i>
-                                        </button>
-                    <input type="text" required maxlength="8"  onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" id="documento" class="form-control" name="dnipaci" value="<?php echo $d->dnipa  ?>" placeholder="Enter Email">
+                    <label for="email2">DPI del paciente</label> 
+                    <!-- <button type="button" id="buscar" class="btn btn-icon btn-round btn-dark">
+                         <i class="fab fa-discourse"></i>
+                    </button> -->
+                    <input type="text" required maxlength="13"  onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" id="documento" class="form-control" name="dnipaci" value="<?php echo $d->dnipa  ?>" placeholder="Ingrese DPI">
                     <input type="hidden" name="custid" value="<?php echo $d->codpaci  ?>">
-               <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>
+               <small id="emailHelp2" class="form-text text-muted">DPI del paciente.</small>
                     </div>
 
                   </div>    
@@ -341,13 +342,13 @@ if($sentencia){
   <div class="col-md-6 col-lg-6">
      <label for="email2">Nombre del paciente</label>
      <input type="text" required id="nombres" class="form-control" onkeypress="return soloLetras(event)" name="nompac" value="<?php echo $d->nombrep  ?>" placeholder="Enter paciente">
-     <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>   
+     <small id="emailHelp2" class="form-text text-muted">Nombre del paciente.</small>   
   </div>  
 
   <div class="col-md-6 col-lg-6">
      <label for="email2">Apellido del paciente</label>
      <input type="text" required id="apellidoPaterno" class="form-control" onkeypress="return soloLetras(event)" name="apepac" value="<?php echo $d->apellidop  ?>" placeholder="Enter paciente">
-     <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>   
+     <small id="emailHelp2" class="form-text text-muted">Apellido del paciente.</small>   
   </div>                    
 </div>
 
@@ -361,13 +362,13 @@ if($sentencia){
                 <option value="Si">Si</option>
                 <option value="No">No</option>  
             </select>
-            <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small> 
+            <small id="emailHelp2" class="form-text text-muted">Seguro del paciente.</small> 
   </div>  
 
   <div class="col-md-6 col-lg-6">
      <label for="email2">Teléfono del paciente</label>
      <input type="text" required class="form-control" maxlength="9"  onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" value="<?php echo $d->tele  ?>" name="telpa" placeholder="Enter Email">
-     <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>   
+     <small id="emailHelp2" class="form-text text-muted">Teléfono del paciente.</small>   
   </div>                    
 </div>
 
@@ -381,7 +382,7 @@ if($sentencia){
                 <option value="Masculino">Masculino</option>
                 <option value="Femenino">Femenino</option>  
             </select>
-            <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small> 
+            <small id="emailHelp2" class="form-text text-muted">Género del paciente.</small> 
   </div>  
                     
 </div>
@@ -402,16 +403,12 @@ if($sentencia){
                  </div>   
                </div>
           </div>
-
-
         </div>
-
     </div>
                <footer class="footer">
                     <div class="container-fluid">
-                        
                          <div class="copyright ml-auto">
-                              2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.themekita.com">ThemeKita</a>
+                              2023, sistema donado por UMG.
                          </div>                   
                     </div>
                </footer>

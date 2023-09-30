@@ -40,7 +40,7 @@
                <div class="logo-header" data-background-color="dark2">
                     
                     <a href="../administrador/escritorio.php" class="logo">
-                         <img src="../../backend/img/logo.svg" alt="navbar brand" class="navbar-brand">
+                         <img src="../../backend/img/icon.png" alt="navbar brand" style="width: 50px" class="navbar-brand"> FUNDACIÓN
                     </a>
                     <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon">
@@ -82,14 +82,14 @@
                               <li class="nav-item dropdown hidden-caret">
                                    <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
                                         <div class="avatar-sm">
-                                             <img src="../../backend/img/mujer.png" alt="..." class="avatar-img rounded-circle">
+                                             <img src="../../backend/img/avatar.png" alt="..." class="avatar-img rounded-circle">
                                         </div>
                                    </a>
                                    <ul class="dropdown-menu dropdown-user animated fadeIn">
                                         <div class="dropdown-user-scroll scrollbar-outer">
                                              <li>
                                                   <div class="user-box">
-                                                       <div class="avatar-lg"><img src="../../backend/img/mujer.png" alt="image profile" class="avatar-img rounded"></div>
+                                                       <div class="avatar-lg"><img src="../../backend/img/avatar.png" alt="image profile" class="avatar-img rounded"></div>
                                                        <div class="u-text">
                                                             <h4><?php echo ucfirst($_SESSION['nombre']); ?></h4>
                                                             <p class="text-muted"><?php echo ucfirst($_SESSION['email']); ?></p><a href="../profile/mostrar.php" class="btn btn-xs btn-secondary btn-sm">ver perfil</a>
@@ -118,7 +118,7 @@
                     <div class="sidebar-content">
                          <div class="user">
                               <div class="avatar-sm float-left mr-2">
-                                   <img src="../../backend/img/mujer.png" alt="..." class="avatar-img rounded-circle">
+                                   <img src="../../backend/img/avatar.png" alt="..." class="avatar-img rounded-circle">
                               </div>
                               <div class="info">
                                    <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
@@ -327,7 +327,7 @@ if($sentencia){
                     <label for="email2">Fecha</label>
                     <input type="date" required class="form-control" name="fecappo" value="<?php echo $d->dates  ?>" placeholder="Enter Email">
                     <input type="hidden" name="appoid" value="<?php echo $d->codcit  ?>">
-               <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>
+               <small id="emailHelp2" class="form-text text-muted">Fecha de la cita.</small>
                     </div>  
                   </div> 
 
@@ -336,7 +336,7 @@ if($sentencia){
                     <label for="email2">Hora</label>
                     <input type="time" required class="form-control" name="ourappo" value="<?php echo $d->hour   ?>" placeholder="Enter Email">
                   
-               <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>
+               <small id="emailHelp2" class="form-text text-muted">Hora de la cita.</small>
                     </div>  
                   </div>
 
@@ -363,7 +363,7 @@ if($sentencia){
                 ?>
                     </select>
                   
-               <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>
+               <small id="emailHelp2" class="form-text text-muted">Paciente.</small>
                     </div>  
                   </div> 
 
@@ -372,7 +372,7 @@ if($sentencia){
                        <label for="email2">Área anterior</label>
                        <input type="text" style="color: black;" disabled class="form-control"  value="<?php echo $d->nombrees   ?>" placeholder="Enter Email">
                   
-               <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>   
+               <small id="emailHelp2" class="form-text text-muted">Área de la cita solicitada.</small>   
                      </div>  
                   </div>   
                   </div>
@@ -383,7 +383,7 @@ if($sentencia){
                        <label for="email2">Médico anterior</label>
                        <input type="text" style="color: black;" disabled class="form-control" value="<?php echo $d->apedoc   ?>" placeholder="Enter Email">
                   
-               <small id="emailHelp2" class="form-text text-muted">We'll never share your email with anyone else.</small>   
+               <small id="emailHelp2" class="form-text text-muted">Médico que atenderá la cita solicitada.</small>   
                      </div>  
                   </div>   
                   </div>
@@ -430,9 +430,8 @@ if($sentencia){
     </div>
                <footer class="footer">
                     <div class="container-fluid">
-                        
                          <div class="copyright ml-auto">
-                              2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.themekita.com">ThemeKita</a>
+                              2023, sistema donado por UMG.
                          </div>                   
                     </div>
                </footer>

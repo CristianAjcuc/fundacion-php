@@ -19,11 +19,11 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group form-group-default">
-                            <label>DNI del médico</label>
-                            <input name="dnidoc" maxlength="8" id="documento" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required type="text" class="form-control" placeholder="ejmp: 77676576">
- <button type="button" id="buscar" class="btn btn-icon btn-round btn-dark">
-                                            <i class="fab fa-discourse"></i>
-                                        </button>
+                            <label>DPI del médico</label>
+                            <input name="dnidoc" maxlength="13" id="documento" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required type="text" class="form-control" placeholder="ejmp: 77676576">
+                            <button type="button" id="buscar" class="btn btn-icon btn-round btn-dark">
+                                <i class="fab fa-discourse"></i>
+                            </button>
                         </div>
 
                     </div>
@@ -93,13 +93,13 @@
 
 <div class="col-md-6">
     <div class="form-group form-group-default">
-        <label>nacionalidad del del médico</label>
+        <label>nacionalidad del médico</label>
 <select class="form-control" name="nacionam" required>
-        <option value="Peruana(o)">Peruana(o)</option>
-        <option value="Venezolana(o)">Venezolana(o)</option>
+        <option value="Guatemalteco(a)">Guatemalteco(a)</option>
+        <!-- <option value="Venezolana(o)">Venezolana(o)</option>
         <option value="Argentina(o)">Argentina(o)</option>
         <option value="Ecuatoriana(o)">Ecuatoriana(o)</option>
-        <option value="Uruguaya(o)">Uruguaya(o)</option>
+        <option value="Uruguaya(o)">Uruguaya(o)</option> -->
 
     </select>    
     </div>

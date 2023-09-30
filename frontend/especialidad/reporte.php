@@ -8,7 +8,7 @@ class PDF extends FPDF
 
     function Header()
 {
-$this->Image('../../backend/img/icon.png',-1,-1,85);
+$this->Image('../../backend/img/Fundación.png',-1,-1,85);
 $this->Image('../../backend/img/icon.png',250,15,25);
 
 $this->SetY(40);
@@ -34,7 +34,7 @@ function Footer()
         $this->Cell(95,5,utf8_decode('Página ').$this->PageNo().' / {nb}',0,0,'L');
         $this->Cell(180,5,date('d/m/Y | g:i:a') ,00,1,'R');
         $this->Line(10,287,200,287);
-        $this->Cell(0,5,utf8_decode("atlantis © Todos los derechos reservados."),0,0,"C");
+        $this->Cell(0,5,utf8_decode("UMG © Todos los derechos reservados."),0,0,"C");
         
 }
 }

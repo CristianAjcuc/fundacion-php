@@ -10,10 +10,9 @@
             if(r.numeroDocumento==dni){
                 $('#nombres').val(r.nombres);
                 $('#apellidoPaterno').val(r.apellidoPaterno);
-              
-             
             }else{
-                alert(r.error);
+                // alert(r.error);
+                alert("No. DPI debe contener 13 digitos");
             }
             console.log(r)
            }

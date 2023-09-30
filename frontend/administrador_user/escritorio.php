@@ -40,7 +40,7 @@
                <div class="logo-header" data-background-color="dark2">
                     
                     <a href="escritorio.php" class="logo">
-                         <img src="../../backend/img/logo.svg" alt="navbar brand" class="navbar-brand">
+                         <img src="../../backend/img/icon.png" alt="navbar brand" style="width: 50px" class="navbar-brand"> FUNDACIÓN
                     </a>
                     <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
                          <span class="navbar-toggler-icon">
@@ -82,14 +82,14 @@
                               <li class="nav-item dropdown hidden-caret">
                                    <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false">
                                         <div class="avatar-sm">
-                                             <img src="../../backend/img/mujer.png" alt="..." class="avatar-img rounded-circle">
+                                             <img src="../../backend/img/avatar.png" alt="..." class="avatar-img rounded-circle">
                                         </div>
                                    </a>
                                    <ul class="dropdown-menu dropdown-user animated fadeIn">
                                         <div class="dropdown-user-scroll scrollbar-outer">
                                              <li>
                                                   <div class="user-box">
-                                                       <div class="avatar-lg"><img src="../../backend/img/mujer.png" alt="image profile" class="avatar-img rounded"></div>
+                                                       <div class="avatar-lg"><img src="../../backend/img/avatar.png" alt="image profile" class="avatar-img rounded"></div>
                                                        <div class="u-text">
                                                             <h4><?php echo ucfirst($_SESSION['nombre']); ?></h4>
                                                             <p class="text-muted"><?php echo ucfirst($_SESSION['email']); ?></p><a href="profile.php" class="btn btn-xs btn-secondary btn-sm">ver perfil</a>
@@ -118,7 +118,7 @@
                     <div class="sidebar-content">
                          <div class="user">
                               <div class="avatar-sm float-left mr-2">
-                                   <img src="../../backend/img/mujer.png" alt="..." class="avatar-img rounded-circle">
+                                   <img src="../../backend/img/avatar.png" alt="..." class="avatar-img rounded-circle">
                               </div>
                               <div class="info">
                                    <a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
@@ -223,7 +223,7 @@ if($sentencia){
                     <div class="row mt-3">
                          <div class="col-md-4">
                               <div class="form-group form-group-default">
-                                   <label>DNI</label>
+                                   <label>DPI</label>
                                    <input type="text" class="form-control" value="<?php echo $d->dnipa ?>" name="dnipa" placeholder="DNI" placeholder="77764664">
                               </div>
                          </div>
@@ -290,7 +290,7 @@ if($sentencia){
                <div class="card-header" style="background-image: url('../assets/img/blogpost.jpg')">
                     <div class="profile-picture">
                          <div class="avatar avatar-xl">
-                              <img src="../../backend/img/mujer.png" alt="..." class="avatar-img rounded-circle">
+                              <img src="../../backend/img/avatar.png" alt="..." class="avatar-img rounded-circle">
                          </div>
                     </div>
                </div>
@@ -309,8 +309,8 @@ if($sentencia){
                               <a class="btn btn-primary btn-sm btn-link" rel="publisher" href="#"> 
                                    <span class="btn-label just-icon"><i class="flaticon-facebook"></i> </span> 
                               </a>
-                              <a class="btn btn-danger btn-sm btn-link" rel="publisher" href="#"> 
-                                   <span class="btn-label just-icon"><i class="flaticon-dribbble"></i> </span> 
+                              <!-- <a class="btn btn-danger btn-sm btn-link" rel="publisher" href="#"> 
+                                   <span class="btn-label just-icon"><i class="flaticon-dribbble"></i> </span>  -->
                               </a>
                          </div>
                          
@@ -329,7 +329,7 @@ if($sentencia){
                     <div class="container-fluid">
                         
                          <div class="copyright ml-auto">
-                              2018, made with <i class="fa fa-heart heart text-danger"></i> by <a href="https://www.themekita.com">ThemeKita</a>
+                              2023, sistema donado por UMG.
                          </div>                   
                     </div>
                </footer>

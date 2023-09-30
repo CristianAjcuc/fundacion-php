@@ -45,6 +45,7 @@
                             <label>Cargo</label>
                             <select class="form-control" name="usucarg">
                     <option value="1">Administrador</option>
+                    <option value="5">Auxiliar</option>
                </select>
                         </div>
                     </div>

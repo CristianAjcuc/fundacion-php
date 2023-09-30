@@ -19,11 +19,11 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group form-group-default">
-                            <label>DNI del paciente</label>
-                            <input name="dnipaci" maxlength="8" id="documento" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required type="text" class="form-control" placeholder="ejmp: 77676576">
- <button type="button" id="buscar" class="btn btn-icon btn-round btn-dark">
-                                            <i class="fab fa-discourse"></i>
-                                        </button>
+                            <label>DPI del paciente</label>
+                            <input name="dnipaci" maxlength="13" id="documento" onKeypress="if (event.keyCode < 45 || event.keyCode > 57) event.returnValue = false;" required type="text" class="form-control" placeholder="Ejmp: 77676576">
+                            <!-- <button type="button" id="buscar" class="btn btn-icon btn-round btn-dark">
+                                <i class="fab fa-discourse"></i>
+                            </button> -->
                         </div>
 
                     </div>
