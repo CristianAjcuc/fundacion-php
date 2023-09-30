@@ -23,13 +23,12 @@ if(isset($_POST['upd_pass']))
         echo '<script type="text/javascript">
 
 swal({
-    title: "Good job!",
-    text: "You clicked the button!",
+    title: "Agregado Correctamente!",
+    text: "¡Haz click en aceptar! ",
     icon: "success",
     buttons: {
         confirm: {
-            text: "Confirm Me",
-            value: true,
+            text: "Aceptar",
             visible: true,
             className: "btn btn-success",
             closeModal: true

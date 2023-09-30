@@ -329,7 +329,7 @@ if($sentencia){
 
                  </div> 
                  <div class="card-action">
-                         <button type="submit" name="delete_horari" class="btn btn-success">Agregar</button>
+                         <button type="submit" name="delete_horari" class="btn btn-success">Eliminar</button>
                          <button class="btn btn-danger">Cancelar</button>
                     </div>
                </form>
